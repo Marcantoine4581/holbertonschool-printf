@@ -12,7 +12,7 @@ typedef struct s_format
 {
 	char *sc;
 	int (*f)(va_list arg);
-}s_format;
+} s_format;
 
 int _putchar(char c);
 int _printf(const char *format, ...);
