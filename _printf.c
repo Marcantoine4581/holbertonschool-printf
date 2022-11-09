@@ -12,6 +12,8 @@ int (*check_format(const char *format))(va_list)
 	s_format type[] = {
 		{"c", print_char},
 		{"s", print_string},
+		{"d", print_decimal},
+		{"i", print_int},
 		{NULL, NULL}
 	};
 
