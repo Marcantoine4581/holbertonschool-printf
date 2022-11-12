@@ -1,0 +1,67 @@
+./" This is the man page of the simple printf command, called _printf
+.TH _printf(3) "09-11-222" "V1.0" "_printf man page"
+
+.SH NAME
+_printf
+
+.SH DESCRIPTION
+
+The _printf function (wich derives its name from "print formatted") prints a message on the screen using 
+a "format string" that includes the instructions to mix multiple strings into the final string to display.
+
+.SH SYNOPSIS
+
+#include "main.h"
+
+int
+_printf(const char *format, ...);
+
+.SH RETURN VALUE
+
+The printf function return the number of characters written. If it returns a negative value it indicates that an error has occured.
+
+.SH TYPES OF FORMATS
+
+.IP c
+The argument passed for specifier "%c" is of type int. "%c" converts it to a char and prints a single character.
+
+.IP s
+The argument passed for specifier "%s" is a string in conts char *. "%s" prints the string pointed to be a char *.
+
+.IP %
+The argument passed is not converted, it will only print a percent sign "%". To use this you must write "%%".
+
+.IP i,d
+The argument passed is an int argument, "%i" or "%d" do a signed decimal conversion of an integer.
+
+.SH BUGS
+At the moment we dont have errors.
+
+.SH EXAMPLE
+
+#include "main.h"
+
+/**
+ * main - main function
+ * Return: Always 0 (Sucess)
+ */
+int main(void)
+{
+
+        int i;
+        int d;
+        char *s;
+
+        i = 2012;
+        d = 10;
+        s = "Jean"
+
+        _printf("My name is %s, i'm %d years old and i was born in %i.\n", s, d, i);
+        return (0);
+}
+
+.SS Output
+My name is Jean, i'm 10 years old and i was born in 2021.
+
+.SH AUTHORS
+MARC-ANTOINE VANNIER and DINU MIRA
