@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * print_decimal - A function that prints an integer
+ * print_int - A function that prints an integer
  * @i: integer to print.
  * Return: number of characters.
  */
